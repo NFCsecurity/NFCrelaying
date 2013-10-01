@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="TCP"
+        android:dialogTitle="Protocol"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listArray"
+        android:key="protocol"
+        android:title="Protocol" />
+
+    <EditTextPreference
+        android:defaultValue="192.168.1.1"
+        android:dialogTitle="Server IP"
+        android:key="ip"
+        android:title="Server IP" />
+    <EditTextPreference
+        android:defaultValue="1337"
+        android:dialogTitle="Server Port"
+        android:key="port"
+        android:numeric="integer"
+        android:title="Server Port" />
+
+</PreferenceScreen>

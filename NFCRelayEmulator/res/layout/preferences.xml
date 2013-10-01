@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/protocol_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Protocol" />
+
+    <Spinner
+        android:id="@+id/protocol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:defaultValue="TCP"
+        android:entries="@array/listArray" />
+
+    <TextView
+        android:id="@+id/port_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Port" />
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:key="port" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+</LinearLayout>
